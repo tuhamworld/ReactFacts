@@ -13,13 +13,77 @@ body {
 }
 
 nav {
-    background-color: #21222A;
-    color: #fff;
+    background-color: #fff;
     display: flex;
     align-items: center;
     padding: 2rem 1rem;
 
 }
+
+nav.dark {
+    background-color: #21222A;
+}
+
+.toggler {
+    display: flex;
+    align-items: center;
+}
+
+.toggler p {
+    font-size: 0.625rem;
+    font-weight: 600;
+}
+
+.toggler--slider {
+    width: 25px;
+    height: 13px;
+    background-color: #2B283A;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+    border-color: white;
+    background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+    background-color: black;
+}
+
+.toggler--light {
+    color: #2B283A;
+}
+
+nav.dark .toggler--light {
+    color: #918E9B;
+}
+
+.toggler--dark {
+    color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+    color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+    justify-content: flex-end;
+}
+
 
 nav h3 {
     margin-right: auto;
@@ -28,7 +92,6 @@ nav h3 {
 }
 
 h1 {
-    color: #fff;
     font-weight: 700;
     font-size: 2.5rem;
     margin-bottom: 3rem;
@@ -39,15 +102,33 @@ h4 {
 }
 
 
+main {
+    background-image: url("./assets/react-icon-light.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    flex: 1 1 auto;
+    background-color: white;
+    color: #2B283A;
+}
 
 main .container {
-    margin: 5rem 0rem 0rem 10rem;
-    background: url('./assets/reactjs-bg.png');
+    padding: 3rem 0rem 3rem 10rem;
     background-repeat: no-repeat;
     /* background-size: contain; */
     background-position-x: 34rem;
     background-position-y: 7rem;
 }
+
+main.dark {
+    background-image: url("./images/react-icon-light");
+    background-color: #282D35;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: right center;
+    flex: 1 1 auto;
+
+}
+
 
 main .container li {
     list-style: none;
@@ -65,11 +146,21 @@ main .container li::before {
 
 }
 
-footer,
-footer a {
-    color: #fff;
+footer {
+    color: #21222A;
+    background-color: #fff;
     text-align: center;
-    margin-top: 4rem;
+    padding: 1rem 0rem 1rem 0rem;
     font-size: small;
     text-decoration: none;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer.dark,
+footer.dark a {
+    color: #fff;
+    background-color: #21222A;
 }

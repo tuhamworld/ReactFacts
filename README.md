@@ -1,3 +1,6 @@
 # React Facts - Fun Facts about React
 
-Discover some fun facts about React
+## Concepts used
+- Props
+- States
+- Conditional rendering
