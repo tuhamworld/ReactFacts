@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./index.css";
-import Main from "./components/main.jsx";
-import Navbar from "./components/navbar.jsx";
-import Footer from "./components/footer.jsx";
+import Main from "./components/Main.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
   const [dark, setDark] = useState(false);

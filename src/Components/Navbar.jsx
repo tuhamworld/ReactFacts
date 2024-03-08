@@ -1,7 +1,7 @@
 import React from "react";
 import reactLogo from '../assets/react-icon-small.png';
 
-const Navbar = (props) => {
+export default function Navbar (props) {
     return (
 
         <nav className={props.darkMode ? "dark" : ""}>
@@ -25,5 +25,3 @@ const Navbar = (props) => {
         </nav>
     )
 }
-
-export default Navbar;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Main = (props) => {
+export default function Main (props) {
   return (
     <main className={props.darkMode ? "dark" : ""}>
       <div className="container">
@@ -17,4 +17,3 @@ const Main = (props) => {
   );
 };
 
-export default Main;
