@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Main (props) {
+export default function Body (props) {
   return (
     <main className={props.darkMode ? "dark" : ""}>
       <div className="container">
