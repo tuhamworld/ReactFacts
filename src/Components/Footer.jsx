@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 export default function Footer(props) {
   return (
@@ -11,4 +11,8 @@ export default function Footer(props) {
       </small>
     </footer>
   );
+}
+
+Footer.propTypes = {
+  darkMode: PropTypes.bool,
 }

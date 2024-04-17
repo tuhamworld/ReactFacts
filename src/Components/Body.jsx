@@ -1,4 +1,5 @@
-import React from "react";
+import PropTypes from "prop-types";
+
 
 export default function Body (props) {
   return (
@@ -17,3 +18,6 @@ export default function Body (props) {
   );
 };
 
+Body.propTypes = {
+  darkMode: PropTypes.bool,
+}
