@@ -1,4 +1,5 @@
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
+import React from 'react';
 
 import reactLogo from '../assets/react-icon-small.png';
 
@@ -27,7 +28,7 @@ export default function Navbar (props) {
     )
 }
 
-Navbar.propTypes = {
-    darkMode: PropTypes.bool,
-    toggleDarkMode: PropTypes.func.isRequired,
-};
+// Navbar.propTypes = {
+//     darkMode: PropTypes.bool,
+//     toggleDarkMode: PropTypes.func.isRequired,
+// };

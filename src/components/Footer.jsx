@@ -1,4 +1,5 @@
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
+import React from "react";
 
 export default function Footer(props) {
   return (
@@ -13,6 +14,6 @@ export default function Footer(props) {
   );
 }
 
-Footer.propTypes = {
-  darkMode: PropTypes.bool,
-}
+// Footer.propTypes = {
+//   darkMode: PropTypes.bool,
+// }
